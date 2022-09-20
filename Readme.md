@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Артур Музафаров](https://up.htmlacademy.ru/htmlcss/35/user/2192621).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
