@@ -9,7 +9,7 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" src="" alt="Логотип города Седона">
+          <img class="page-header-logo" src="images/logo/logo.svg" width="140" height="70" alt="Логотип города Седона">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -34,10 +34,10 @@
               <span class="counter"></span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
-          </li>
         </ul>
+        <p class="navigation-item">
+          <a class="navigation-link" href="#">Хочу сюда!</a>
+        </p>
       </nav>
     </header>
 
@@ -49,6 +49,8 @@
             <a class="breadcrumbs-link" href="index.html">
               <span class="breadcrumbs-link-main-index">Иконка дома</span>
             </a>
+            <p class="breadcrumbs-item">
+            </p>
           </li>
           <li class="breadcrumbs-item">
             <p class="breadcrumbs-catalog">Гостиницы</p>
@@ -78,18 +80,23 @@
             <legend>Тип жилья:</legend>
             <ul class="filter-list">
               <li class="filter-item">
-                <input class="control-input" type="radio" name="product-group" value="hotel" id="hotel" checked>
-                <label class="control" for="hotel">Гостиница</label>
+                <input class="control-input" type="radio" name="product-group" value="hotel" id="1" checked>
+                <label class="control" for="1">Гостиница</label>
               </li>
               <li class="filter-item">
-                <input class="control-input" type="radio" name="product-group" value="motel" id="motel">
-                <label class="control" for="motel">Мотель</label>
+                <input class="control-input" type="radio" name="product-group" value="motel" id="2">
+                <label class="control" for="2">Мотель</label>
               </li>
               <li class="filter-item">
-                <input class="control-input" type="radio" name="product-group" value="Apartments" id="Apartments">
-                <label class="control" for="Apartments">Апартаменты</label>
+                <input class="control-input" type="radio" name="product-group" value="Apartments" id="3">
+                <label class="control" for="3">Апартаменты</label>
               </li>
             </ul>
+          </fieldset>
+          <fieldset class="filter-group">
+            <legend>Стоимость, ₽:</legend>
+            <input type="text">
+            <input type="text">
           </fieldset>
           <button class="button" type="submit" >Применить</button>
           <button class="button" type="reset">Сбросить</button>
@@ -97,13 +104,13 @@
       </header>
 
       <section>
-        <p class="result">Найдено гостиниц: 38</p>
+        <p class="result">Найдено гостиниц: <span>38</span></p>
         <select class="select-conrol" aria-label="Сортировка">
           <option value="cheap" selected>Сначала дешевые</option>
           <option value="popular">Сначала популярное</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a class="button" href="#">
+        <a class="button button-current" href="#">
           <span class="visually-hidden">Показать карточки</span>
         </a>
         <a class="button" href="#">
@@ -115,7 +122,7 @@
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link-image" href="product.html" tabindex="-1">
-              <img class="product-card-image" src="" alt="Изображение ущелья в горах">
+              <img class="product-card-image" src="images/catalog/hotels/product-card-1.jpg" width="300" height="212" alt="Изображение ущелья в горах">
             </a>
             <a class="product-card-link-title" tabindex="-1">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
@@ -131,7 +138,7 @@
           </li>
           <li class="product-card">
             <a class="product-card-link-image" href="product.html" tabindex="-1">
-              <img class="product-card-image" src="" alt="Изображение радуги">
+              <img class="product-card-image" src="images/catalog/hotels/product-card-2.jpg" width="300" height="212" alt="Изображение радуги">
             </a>
             <a class="product-card-link-title" tabindex="-1">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
@@ -147,7 +154,7 @@
           </li>
           <li class="product-card">
             <a class="product-card-link-image" href="product.html" tabindex="-1">
-              <img class="product-card-image" src="" alt="Изображение каньона днём">
+              <img class="product-card-image" src="images/catalog/hotels/product-card-3.jpg" width="300" height="212" alt="Изображение каньона днём">
             </a>
             <a class="product-card-link-title" tabindex="-1">
               <h3 class="product-card-title">Desert Quail Inn</h3>
@@ -163,7 +170,7 @@
           </li>
           <li class="product-card">
             <a class="product-card-link-image" href="product.html" tabindex="-1">
-              <img class="product-card-image" src="" alt="Изображение каньона ночью">
+              <img class="product-card-image" src="images/catalog/hotels/product-card-4.jpg" width="300" height="212" alt="Изображение каньона ночью">
             </a>
             <a class="product-card-link-title" tabindex="-1">
               <h3 class="product-card-title">GreenTree Inn</h3>
@@ -203,7 +210,7 @@
 
     <footer class="page-footer">
       <section class="newsletter">
-       <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
+        <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
@@ -239,7 +246,7 @@
       </section>
 
       <a class="footer-logo" href="https://htmlacademy.ru/">
-        <img class="page-footer-logo" src="" alt="Логотип .html academy">
+        <img class="page-footer-logo" src="images/logo/copyright.svg" width="114.9" height="32.9" alt="Логотип html academy">
       </a>
     </footer>
   </body>
