@@ -8,10 +8,10 @@
 
   <body>
     <header class="page-header">
+      <a class="logo" href="index.html">
+        <img class="page-header-logo" src="images/logo/logo.svg" width="140" height="70" alt="Логотип города Седона">
+      </a>
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" src="images/logo/logo.svg" width="140" height="70" alt="Логотип города Седона">
-        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -20,7 +20,7 @@
             <a class="navigation-link" href="about.html">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -41,7 +41,6 @@
         </p>
       </nav>
     </header>
-
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -78,7 +77,7 @@
           </fieldset>
 
           <fieldset class="filter-group">
-            <legend>Тип жилья:</legend>
+            <legend class="filter-title">Тип жилья:</legend>
             <ul class="filter-list">
               <li class="filter-item">
                 <input class="control-input" type="radio" name="product-group" value="hotel" id="1" checked>
@@ -95,17 +94,17 @@
             </ul>
           </fieldset>
           <fieldset class="filter-group">
-            <legend>Стоимость, ₽:</legend>
+            <legend class="filter-title">Стоимость, ₽:</legend>
             <input type="text">
             <input type="text">
           </fieldset>
-          <button class="button" type="submit" >Применить</button>
-          <button class="button" type="reset">Сбросить</button>
+          <button class="button filter-button" type="submit" >Применить</button>
+          <button class="button filter-button" type="reset">Сбросить</button>
         </form>
       </header>
 
-      <section>
-        <p class="result">Найдено гостиниц: <span>38</span></p>
+      <section class="result">
+        <p class="result-description">Найдено гостиниц: <span>38</span></p>
         <select class="select-conrol" aria-label="Сортировка">
           <option value="cheap" selected>Сначала дешевые</option>
           <option value="popular">Сначала популярное</option>
@@ -209,23 +208,24 @@
       </section>
     </main>
 
-    <footer class="page-footer">
-      <section class="newsletter">
-        <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-          <label class="visually-hidden" for="newsletter-email">Email</label>
-          <button class="newsletter-button" type="submit">Подписаться</button>
-        </form>
-      </section>
+    <section class="newsletter">
+      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+      <p class="newsletter-title-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+        <label class="visually-hidden" for="newsletter-email">Email</label>
+        <button class="newsletter-button" type="submit">Подписаться</button>
+      </form>
+    </section>
 
+
+    <footer class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
-              <span class = "visually-hidden">Vkontakte</span>
+            <span class = "visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="footer-social-item">
@@ -243,11 +243,11 @@
 
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="footer-contacts-phone" href="tel:+78128121212">+7(812)812-12-12</a>
+        <a class="contacts-phone" href="tel:+78128121212">+7(812)812-12-12</a>
       </section>
 
-      <a class="footer-logo" href="https://htmlacademy.ru/">
-        <img class="page-footer-logo" src="images/logo/copyright.svg" width="114.9" height="32.9" alt="Логотип html academy">
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+        <img class="footer-logo" src="images/logo/copyright.svg" width="114.9" height="32.9" alt="Логотип html academy">
       </a>
     </footer>
   </body>
