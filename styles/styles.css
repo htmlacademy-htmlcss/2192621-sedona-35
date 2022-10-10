@@ -35,6 +35,24 @@ body {
   background-color: #FFFFFF;
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list{
+  margin: 0;
+  padding: 0;
+  width: 455px;
+  list-style: none;
+}
+
+.navigation-user{
+  width: 358px;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-size: 20px;
   line-height: 1.2;
@@ -45,7 +63,7 @@ body {
   text-transform: capitalize;
 }
 
-.navigation .navigation-link-button {
+.navigation-link-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -57,6 +75,39 @@ body {
 
 .main-container {
   flex-grow: 1;
+}
+
+.page-container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-image{
+  display: block;
+  margin: 0 auto;
+}
+
+.advantages-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-items{
+  width: 400px;
+}
+
+.services-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services-item{
+  width: 400px;
 }
 
 .welcome {
