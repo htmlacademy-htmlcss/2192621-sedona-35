@@ -20,14 +20,19 @@ html {
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 1.16;
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.page-container{
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .page-header {
@@ -82,11 +87,6 @@ body {
   flex-grow: 1;
 }
 
-.page-container{
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .welcome-image{
   display: block;
   margin: 0 auto;
@@ -102,7 +102,7 @@ body {
 
 .advantages-items{
   display: flex;
-  width: 400px;
+  width: 100%;
 }
 
 .welcome {
@@ -153,11 +153,8 @@ body {
 }
 
 .services-item{
-  display: flex;
-  flex-direction: column;
   text-align: center;
   width: 400px;
-  height: 384px;
 }
 
 .services-title {
@@ -276,6 +273,11 @@ justify-content: center;
   background-color: #FFFFFF;
 }
 
+.page-footer {
+  display: flex;
+  flex-direction: row;
+}
+
 .page-footer a {
   color: #83B3D3;
   }
@@ -293,16 +295,11 @@ justify-content: center;
   text-decoration: none;
 }
 
-.page-footer-container{
+.footer-social-list{
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-social{
-display: flex;
-width: 150px;
-margin-right: 42px;
+  list-style: none;
+  width: 150px;
+  margin-right: 42px;
 }
 
 .footer-contacts{
@@ -310,10 +307,35 @@ margin-right: 42px;
 }
 
 .htmlacademy-link{
-width: 115px;
-margin-left: auto;
-margin-top: auto;
-margin-bottom: auto;
+  width: 115px;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.breadcrumbs-list{
+  display: flex;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.filter-group-container{
+  display: flex;
+  padding: 0 140px 73px 70px;
+}
+
+.filter-group-container-price{
+display: flex;
+
+}
+
+.filter-group{
+  margin: 0;
+  padding: 0;
+}
+
+.filter-list{
+  list-style: none;
 }
 
 .inner-header {
@@ -325,6 +347,10 @@ margin-bottom: auto;
 }
 
 .inner-header-title {
+  padding-top: 35px;
+  padding-left: 70px;
+  margin: 0;
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 60px;
   line-height: 1.3;
