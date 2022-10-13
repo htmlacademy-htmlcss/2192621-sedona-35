@@ -35,6 +35,11 @@ body {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
