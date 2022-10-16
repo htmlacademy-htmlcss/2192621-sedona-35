@@ -179,8 +179,11 @@ body {
   background-repeat: no-repeat;
 }
 
+.advantages-title-container {
+  padding: 70px 270px 90px;
+}
+
 .advantages-title-hero {
-  padding: 69px 290px 0;
   margin: 0;
   margin-bottom: 25px;
   font-size: 30px;
@@ -191,9 +194,7 @@ body {
 }
 
 .advantages-description-hero {
-  padding: 0 274px 0;
   margin: 0;
-  margin-bottom: 90px;
   font-weight: 400;
   font-size: 22px;
   line-height: 1.18;
@@ -256,7 +257,7 @@ body {
 }
 
 .search-hotel {
-  padding: 96px 304px 0;
+  padding: 96px 304px;
 }
 
 .search-title {
@@ -280,7 +281,6 @@ body {
 }
 
 .search-hotel a {
-  margin-bottom: 96px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.8;
@@ -300,10 +300,10 @@ body {
 }
 
 .newsletter-main {
+  margin: 0 auto;
+  padding: 96px 258px 104px;
   width: 100%;
   box-sizing: border-box;
-  margin: 0 auto;
-  padding: 96px 258px 0;
   color: #FFFFFF;
   background-color: #000000;
   background-image: url("../images/subscribe/subscribe.jpg");
@@ -332,10 +332,9 @@ body {
   text-align: center;
 }
 
-.newsletter-container {
+.newsletter-form {
   text-align: center;
   margin: 0;
-  margin-bottom: 104px;
 }
 
 .newsletter-button {
@@ -360,6 +359,7 @@ body {
 
 .page-footer {
   display: flex;
+  align-items: center;
   padding: 40px 70px 30px;
 }
 
@@ -489,7 +489,7 @@ body {
   color: #FFFFFF;
   padding: 35px 70px 70px;
   background-color: #000000;
-  background-image: url("../images/catalog/filter.jpg");
+  background-image: url(../images/catalog/filter.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
