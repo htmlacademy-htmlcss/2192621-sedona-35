@@ -301,7 +301,9 @@ body {
 
 .newsletter-main {
   width: 100%;
+  box-sizing: border-box;
   margin: 0 auto;
+  padding: 96px 258px 0;
   color: #FFFFFF;
   background-color: #000000;
   background-image: url("../images/subscribe/subscribe.jpg");
@@ -311,7 +313,6 @@ body {
 
 .newsletter-title {
   align-items: center;
-  padding: 96px 258px 0;
   margin: 0;
   margin-bottom: 20px;
   font-weight: 700;
