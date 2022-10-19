@@ -585,48 +585,19 @@ body {
 .product-card {
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-areas: "image image"
-    "title title"
-    "discription price"
-    "button-1 button-2"
-    "stars rating";
   padding: 20px;
   gap: 16px 20px;
 }
 
-.product-card-link-image {
-  grid-area: image;
-}
-
 .product-card-link-title {
-  grid-area: title;
-}
-
-.product-card-discription {
-  grid-area: discription;
+  grid-column: 1/3;
 }
 
 .product-card-price {
-  grid-area: price;
   justify-self: end;
 }
 
-.product-card-button-1 {
-  grid-area: button-1;
-  padding: 8px 26px;
-}
-
-.product-card-button-2 {
-  grid-area: button-2;
-  padding: 8px 20px;
-}
-
-.hotel-stars {
-  grid-area: stars;
-}
-
 .hotel-rating {
-  grid-area: rating;
   justify-self: end;
   padding: 8px 22px;
 }
@@ -651,6 +622,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
+  padding: 8px 26px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -662,6 +634,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
+  padding: 8px 20px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
