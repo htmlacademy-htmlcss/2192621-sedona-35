@@ -87,6 +87,12 @@ body {
   min-height: 20px;
 }
 
+.button {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
 .navigation-item-button {
   margin-top: auto;
   margin-bottom: auto;
@@ -95,7 +101,7 @@ body {
 
 .navigation-link-button {
   padding: 8px 34px;
-  border-radius: 5px;
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -179,13 +185,9 @@ body {
   background-repeat: no-repeat;
 }
 
-.advantages-title-container {
-  padding: 69px 274px 90px;
-}
-
 .advantages-title-hero {
   margin: 0;
-  margin-bottom: 25px;
+  padding: 69px 290px 25px;
   font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
@@ -195,6 +197,7 @@ body {
 
 .advantages-description-hero {
   margin: 0;
+  padding: 0 274px 90px;
   font-weight: 400;
   font-size: 22px;
   line-height: 1.18;
@@ -350,7 +353,6 @@ body {
 }
 
 .newsletter-button {
-  border: 0;
   padding: 8px 50px;
   font-family: inherit;
   font-weight: 700;
@@ -415,21 +417,16 @@ body {
   margin-bottom: auto;
 }
 
-.catalog-filter {
-  display: flex;
-  margin-top: 40px;
-}
-
-.filter-button-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .breadcrumbs-list {
   display: flex;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   list-style: none;
+}
+
+.catalog-filter {
+  display: flex;
 }
 
 .filter-group {
@@ -543,7 +540,6 @@ body {
 
 .filter-button {
   padding: 8px 50px;
-  margin-bottom: 32px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -552,10 +548,6 @@ body {
   color: #FFFFFF;
   background-color: #82B3D3;
   text-transform: uppercase;
-}
-
-.filter-button:last-child {
-  margin-bottom: 0;
 }
 
 .result {
