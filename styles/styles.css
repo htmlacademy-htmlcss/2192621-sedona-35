@@ -428,7 +428,10 @@ body {
   list-style: none;
 }
 
-.footer-social-item {
+.footer-social-item .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 47px;
   height: 40px;
 }
@@ -443,19 +446,40 @@ body {
   display: flex;
 }
 
-.filter-group {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  border: 0;
-}
-
-.filter-group:nth-child(odd) {
+.filter-infrastructure {
+  margin: 0;
   margin-right: 70px;
 }
 
-.filter-group:nth-child(2) {
+.filter-house {
+  margin: 0;
   margin-right: 140px;
+}
+
+.filter-price {
+  margin: 0;
+  margin-right: 70px;
+  min-width: 288px;
+}
+
+.filter-infrastructure,
+.filter-house {
+  min-width: 160px;
+}
+
+.filter-button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-button:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.filter-group {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
 }
 
 .filter-list {
@@ -475,14 +499,22 @@ body {
   flex-wrap: wrap;
 }
 
-.sorting-container .button {
+.sorting-button {
   width: 48px;
   height: 48px;
   margin-right: 8px;
 }
 
-.sorting-container .button:last-child {
+.sorting-button:last-child {
   margin-right: 0;
+}
+
+.sorting-button:link {
+  border: 2px solid;
+}
+
+.sorting-button:hover {
+  border: 2px solid black;
 }
 
 .product-list {
@@ -546,6 +578,18 @@ body {
   line-height: 1.31;
 }
 
+.breadcrumbs-catalog:hover {
+  color: #FFFFFF99;
+}
+
+.breadcrumbs-catalog:focus {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-catalog:active {
+  color: #FFFFFF4D;
+}
+
 .breadcrumbs-list {
   display: flex;
   margin: 0;
@@ -554,12 +598,14 @@ body {
   list-style: none;
 }
 
-.breadcrumbs-link:nth-child(1) {
+.breadcrumbs-link-home {
   background-image: url("../images/catalog/icon/breadcrumbs-icons/home.svg");
+  background-size: 12px 12px;
   background-repeat: no-repeat;
 }
 
 .filter-title {
+  margin-bottom: 32px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -569,6 +615,10 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.27;
+}
+
+.filter-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .filter-button {
@@ -606,6 +656,8 @@ body {
   line-height: 1.16;
   color: #333333;
 }
+
+
 
 .product-card {
   display: grid;
