@@ -547,6 +547,7 @@ body {
 .filter-button-container {
   display: flex;
   flex-direction: column;
+  justify-content: end;
 }
 
 .filter-button:not(:last-child) {
@@ -564,8 +565,6 @@ body {
   padding: 0;
   list-style: none;
 }
-
-
 
 .result-container {
   display: flex;
@@ -708,6 +707,11 @@ body {
   margin-bottom: 16px;
 }
 
+.filter-price {
+  display: grid;
+  grid-template-columns: 143px 143px;
+}
+
 .filter-button {
   padding: 8px 50px;
   font-family: inherit;
@@ -730,6 +734,11 @@ body {
 
 .filter-button:disabled {
   background-color: #E5E5E5;
+}
+
+.filter-button:nth-child(2) {
+  background-color: transparent;
+  color: #FFFFFF;
 }
 
 .result {
