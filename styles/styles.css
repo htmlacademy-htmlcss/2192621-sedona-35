@@ -257,9 +257,9 @@ body {
 
 .welcome {
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #000000;
   background-image: url("../images/main-title/welcome-image.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -423,7 +423,7 @@ body {
   color: #FFFFFF;
   background-color: #000000;
   background-image: url("../images/subscribe/subscribe.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -653,7 +653,7 @@ body {
   padding: 35px 70px 70px;
   background-color: #000000;
   background-image: url(../images/catalog/filter.jpg);
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
