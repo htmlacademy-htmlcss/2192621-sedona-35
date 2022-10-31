@@ -735,6 +735,51 @@ body {
   margin-bottom: 16px;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 20px;
+  left: 0;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control-mark-house {
+  border-radius: 50%;
+}
+
+.control:active .control-mark {
+  border: 2px solid #83B3D3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  content: "";
+  background-image: url("../images/catalog/filter-item/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+.control-input[type="radio"]:checked + .control-mark::after {
+  position: absolute;
+  content: "";
+  background-image: url("../images/catalog/filter-item/circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
 .range-wrapper-inputs {
   display: flex;
   justify-content: center;
