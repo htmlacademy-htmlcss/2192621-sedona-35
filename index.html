@@ -172,6 +172,51 @@
         </a>
       </footer>
     </div>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-arrival">
+              <label class="arrival-date" for="arrival">Дата заезда:</label>
+              <input class="text-input" type="text" id="arrival" placeholder="27 апреля 2020">
+              <button class="date-button" type="button"></button>
+              <p class="date-text">Мы не можем отправить вас в прошлое.</p>
+            </div>
+            <div class="modal-departure">
+              <label class="departure-date" for="departure">Дата выезда:</label>
+              <input class="text-input" type="text" id="departure" placeholder="1 сентября 2023">
+              <button class="date-button" type="button"></button>
+              <p class="result-text">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+            <div class="modal-additional">
+              <div class="field">
+                <label class="field-label" for="adult">Взрослые:</label>
+                <span class="field-box">
+                  <button class="field-button minus" type="button"></button>
+                  <input class="field-number" id="adult" name="adult" type="number" value="2">
+                  <button class="field-button plus" type="button"></button>
+                </span>
+              </div>
+              <div class="field">
+                <label class="field-label" for="children">Дети:</label>
+                <span class="field-box">
+                  <button class="field-button minus" type="button"></button>
+                  <input class="field-number" id="children" name="children" type="number" value="2">
+                  <button class="field-button plus" type="button"></button>
+                </span>
+              </div>
+            </div>
+            <button class="find button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+
+    </div>
   </body>
 
 </html>
