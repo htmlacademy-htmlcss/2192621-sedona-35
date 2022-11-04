@@ -45,11 +45,12 @@ body {
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .navigation {
   display: flex;
-  width: 1200px;
   margin: 0 auto;
 }
 
