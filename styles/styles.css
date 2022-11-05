@@ -532,6 +532,7 @@ body {
 
 .page-footer .contacts-phone {
   display: flex;
+  flex-wrap: wrap;
   font-weight: 400;
   padding: 20px 195px;
   font-size: 40px;
@@ -924,6 +925,7 @@ body {
 
 .sorting-button {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   width: 48px;
@@ -1224,6 +1226,8 @@ body {
 }
 
 .result-description {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 30px;
   line-height: 1.2;
   margin: 0;
@@ -1231,7 +1235,6 @@ body {
 }
 
 .select {
-  position: relative;
   width: 292px;
   margin-right: auto;
 }
