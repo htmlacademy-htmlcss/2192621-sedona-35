@@ -520,7 +520,9 @@ body {
 }
 
 .page-footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  box-sizing: border-box;
   align-items: center;
   padding: 40px 70px 30px;
   gap: 42px;
@@ -533,8 +535,9 @@ body {
 .page-footer .contacts-phone {
   display: flex;
   flex-wrap: wrap;
+  white-space: nowrap;
   font-weight: 400;
-  padding: 20px 195px;
+  padding: 20px 20px;
   font-size: 40px;
   line-height: 1;
   color: #000000;
@@ -576,10 +579,11 @@ body {
 }
 
 .htmlacademy-link {
-  fill: #000000;
+  grid-column: 3/4;
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
+  fill: #000000;
 }
 
 .htmlacademy-link:hover {
@@ -918,7 +922,8 @@ body {
 }
 
 .result-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 292px 1fr;
   align-items: center;
   padding: 50px 70px 40px;
 }
@@ -976,6 +981,7 @@ body {
 
 .breadcrumbs-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   margin-bottom: 40px;
@@ -1228,15 +1234,14 @@ body {
 .result-description {
   display: flex;
   flex-wrap: wrap;
+  grid-column: 1/2;
+  margin: 0;
   font-size: 30px;
   line-height: 1.2;
-  margin: 0;
-  margin-right: 200px;
 }
 
 .select {
-  width: 292px;
-  margin-right: auto;
+  grid-column: 2/3;
 }
 
 .select-conrol {
@@ -1267,6 +1272,13 @@ body {
 
 .select-conrol:disabled {
   border: 2px solid #0000004D;
+}
+
+.sorting-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 3/4;
+  margin-left: auto;
 }
 
 .product-card {
@@ -1379,6 +1391,7 @@ body {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 80px 70px 60px;
   margin: 0;
@@ -1387,6 +1400,7 @@ body {
 .pagination-item {
   line-height: 1.8;
   font-weight: 700;
+  margin-bottom: 20px;
   background-color: #82B3D3;
 }
 
@@ -1410,6 +1424,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
   color: #FFFFFF;
   min-width: 60px;
   min-height: 60px;
