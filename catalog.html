@@ -115,8 +115,10 @@
             <fieldset class="filter-group filter-price">
               <legend class="filter-title">Стоимость, ₽:</legend>
               <div class="range-wrapper-inputs">
-                <input class="range-input" type="number" value="0" placeholder="от" name="min-price">
-                <input class="range-input" type="number" value="9000" placeholder="до" name="max-price">
+                <input class="range-input from" type="number" value="0" id="from" name="min-price">
+                <label for="from">от</label>
+                <input class="range-input to" type="number" value="9000" id="to" name="max-price">
+                <label for="to">до</label>
               </div>
               <div class="range-scale">
                 <div class="range-bar" style="right: 61px; width: 226px">
@@ -129,10 +131,10 @@
                 </div>
               </div>
             </fieldset>
-            <div class="filter-button-container">
+            <fieldset class="filter-button-container">
               <button class="button filter-button-submit" type="submit">Применить</button>
               <button class="button filter-button-reset" type="reset">Сбросить</button>
-            </div>
+            </fieldset>
           </form>
         </header>
         <section class="result">
