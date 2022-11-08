@@ -98,13 +98,13 @@ body {
 }
 
 .navigation-link-search {
+  width: 20px;
+  height: 20px;
+  padding: 22px 12px;
   background-image: url("../images/header-icon/search.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px 18px;
-  width: 20px;
-  height: 20px;
-  padding: 22px 12px;
 }
 
 .navigation-link-favorites {
@@ -144,7 +144,6 @@ body {
 
 .navigation-link-button {
   padding: 8px 34px;
-  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -152,6 +151,7 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   background-color: #756157;
+  border-radius: 4px;
 }
 
 .navigation-link-button:hover {
@@ -198,11 +198,11 @@ body {
 
 .advantages-container::before {
   content: "";
+  justify-self: center;
+  margin: 30px 0;
   width: 60px;
   height: 2px;
   background-color: #FFFFFF4D;
-  justify-self: center;
-  margin: 30px 0;
 }
 
 .advantages-item-town {
@@ -223,11 +223,11 @@ body {
 
 .advantages-item-square::before {
   content: "";
+  justify-self: center;
+  margin: 30px 0;
   width: 60px;
   height: 2px;
   background-color: #0000004D;
-  justify-self: center;
-  margin: 30px 0;
 }
 
 .advantages-item-road {
@@ -243,11 +243,11 @@ body {
 
 .advantages-item-road::before {
   content: "";
+  justify-self: center;
+  margin: 30px 0;
   width: 60px;
   height: 2px;
   background-color: #0000004D;
-  justify-self: center;
-  margin: 30px 0;
 }
 
 .advantages-item-tourist {
@@ -263,11 +263,11 @@ body {
 
 .advantages-item-tourist::before {
   content: "";
+  justify-self: center;
+  margin: 30px 0;
   width: 60px;
   height: 2px;
   background-color: #0000004D;
-  justify-self: center;
-  margin: 30px 0;
 }
 
 .advantages-item-bridge {
@@ -290,10 +290,10 @@ body {
 .welcome::after {
   content: "";
   display: block;
-  background-image: url("../images/main-title/spacebar.svg");
-  background-repeat: no-repeat;
   width: 1200px;
   height: 57px;
+  background-image: url("../images/main-title/spacebar.svg");
+  background-repeat: no-repeat;
 }
 
 .advantages-title-hero {
@@ -317,12 +317,12 @@ body {
 }
 
 .advantages-title {
-  order: -1;
   margin: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.16;
   text-transform: uppercase;
+  order: -1;
 }
 
 .advantages-description {
@@ -347,12 +347,12 @@ body {
   flex-direction: column;
   justify-content: end;
   text-align: center;
-  box-sizing: border-box;
-  background-repeat: no-repeat;
-  background-position: 50% 80px;
   padding: 80px 85px;
   width: 400px;
   min-height: 384px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: 50% 80px;
 }
 
 .services-item:nth-child(odd) {
@@ -381,9 +381,9 @@ body {
 }
 
 .services-description {
+  margin: 0;
   text-align: center;
   font-weight: 400;
-  margin: 0;
   font-size: 18px;
   line-height: 1.16;
   color: #333333;
@@ -395,11 +395,11 @@ body {
 
 .search-title {
   margin: 0;
+  text-align: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.2;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -415,6 +415,9 @@ body {
 
 .button-search {
   display: block;
+  margin-inline: auto;
+  padding: 8px 50px;
+  width: fit-content;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.8;
@@ -422,9 +425,6 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
-  width: fit-content;
-  margin-inline: auto;
-  padding: 8px 50px;
   border-radius: 5px;
   background-color: #756157;
 }
@@ -443,7 +443,7 @@ body {
 
 .newsletter {
   margin: 0 auto;
-  padding: 96px 258px 104px;
+  padding: 91px 258px 104px;
   width: 100%;
   box-sizing: border-box;
   color: #FFFFFF;
@@ -630,8 +630,8 @@ body {
 
 .modal-close-button {
   position: absolute;
-  top: 0;
-  right: -18px;
+  top: 65px;
+  right: 52px;
   width: 52px;
   height: 52px;
   padding: 0;
@@ -934,7 +934,7 @@ body {
 .result-container {
   display: flex;
   align-items: center;
-  padding: 50px 70px 40px;
+  padding: 50px 70px 36px;
 }
 
 .sorting-button {
@@ -942,8 +942,8 @@ body {
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 45px;
   fill: #000000;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
@@ -1139,7 +1139,7 @@ body {
 .range-input {
   box-sizing: border-box;
   width: 143px;
-  padding: 13px 23px;
+  padding: 13px 21px;
   background-color: #F2F2F2;
   border: none;
   font-size: 18px;
@@ -1178,7 +1178,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-bar {
@@ -1219,6 +1219,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  align-items: center;
   grid-column: 4/5;
   border: none;
   padding: 0;
@@ -1227,7 +1228,7 @@ body {
 }
 
 .filter-button-submit {
-  padding: 8px 50px;
+  padding: 9px 50px;
   font-family: inherit;
   margin-bottom: 32px;
   font-weight: 700;
@@ -1253,7 +1254,7 @@ body {
 }
 
 .filter-button-reset {
-  padding: 8px 50px;
+  padding: 6px 59px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -1286,7 +1287,7 @@ body {
 .select-conrol {
   width: 292px;
   margin-left: auto;
-  padding: 14px 20px;
+  padding: 16px 18px;
   padding-right: 50px;
   background-color: #FFFFFF;
   font-family: inherit;
@@ -1298,7 +1299,7 @@ body {
   border-radius: 4px;
   background-image: url("../images/catalog/icon/check.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
   appearance: none;
 }
 
@@ -1318,7 +1319,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 3px;
+  gap: 8px;
   margin-left: 70px;
 }
 
@@ -1327,6 +1328,10 @@ body {
   grid-template-columns: 140px 140px;
   padding: 20px;
   gap: 16px 20px;
+}
+
+.product-card-image {
+  display: block;
 }
 
 .product-card-link-title {
@@ -1453,7 +1458,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 80px 70px 60px;
+  padding: 83px 70px 60px;
   margin: 0;
 }
 
