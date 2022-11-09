@@ -722,7 +722,8 @@ img {
 }
 
 .text-input:active {
-  border: 2px solid #000000;
+  background-color: #f2f2f2;
+  outline: 2px solid #000000;
 }
 
 .date-button {
@@ -788,7 +789,6 @@ img {
   display: grid;
   margin-left: auto;
   grid-template-columns: 40px 30px 40px;
-  order: 2;
 }
 
 .field-button {
@@ -875,6 +875,10 @@ img {
   background-color: #68a2ca;
 }
 
+.find:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .tooltip {
   position: relative;
   width: 20px;
@@ -884,7 +888,6 @@ img {
   margin-left: 58px;
   background-color: #83b3d3;
   border-radius: 50%;
-  order: 1;
   cursor: help;
 }
 
@@ -1133,10 +1136,6 @@ img {
   border-radius: 50%;
 }
 
-.control:active .control-mark {
-  border: 2px solid #83b3d3;
-}
-
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
   width: 20px;
@@ -1155,6 +1154,11 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   content: "";
+}
+
+.control-input:focus + .control-mark,
+.control-input[type="checkbox"]:focus + .control-mark-house {
+  border: 3px solid #83b3d3;
 }
 
 .range-wrapper {
