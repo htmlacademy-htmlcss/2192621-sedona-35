@@ -1585,26 +1585,6 @@ img {
   line-height: 1.8;
   font-weight: 700;
   margin-bottom: 5px;
-  background-color: #82b3d3;
-  border-radius: 4px;
-}
-
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.pagination-item-current {
-  background-color: #f2f2f2;
-}
-
-.pagination-link:hover:not(.three-dots):not(.pagination-link-current) {
-  background-color: #68a2ca;
-  border-radius: 4px;
-}
-
-.pagination-link:active:not(.three-dots):not(.pagination-link-current) {
-  background-color: #82b3d3;
-  color: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
 
@@ -1620,10 +1600,27 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.8;
+  background-color: #82b3d3;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link-current {
+  background-color: #f2f2f2;
   color: #000000;
+}
+
+.pagination-link:hover:not(.three-dots):not(.pagination-link-current) {
+  background-color: #68a2ca;
+  border-radius: 4px;
+}
+
+.pagination-link:active:not(.three-dots):not(.pagination-link-current) {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
 }
 
 .three-dots {
